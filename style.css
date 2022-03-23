@@ -1,0 +1,121 @@
+* {
+  border: 1px solid grey;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* navBarAndTopInfo */
+#navBarAndTopInfo .topInfo {
+  display: flex;
+  padding: 0 5%;
+}
+
+#navBarAndTopInfo .topInfo .infos {
+  display: flex;
+  width: 80%;
+}
+
+#navBarAndTopInfo .topInfo .infos li {
+  padding: 0 10px;
+}
+
+#navBarAndTopInfo .topInfo .myBasket {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+#navBarAndTopInfo .navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navBarAndTopInfo .navBar .logo {
+  display: inline;
+  width: 30%;
+}
+
+#navBarAndTopInfo .navBar .logo h1 {
+  padding-left: 10%;
+}
+
+#navBarAndTopInfo .navBar .navBarList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 70%;
+}
+
+#navBarAndTopInfo .navBar .navBarList li {
+  padding: 0 3%;
+  text-align: center;
+}
+
+/* saleInfo */
+#saleInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background: url(https://cdn.pixabay.com/photo/2016/11/29/06/16/apple-1867752_960_720.jpg);
+  background-size: cover;
+}
+
+#saleInfo .infos {
+  margin: 8%;
+}
+
+#saleInfo .infos span {
+  color: blue;
+  font-size: 18px;
+}
+
+#saleInfo .infos h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+#saleInfo .infos .shopLink {
+  display: flex;
+  justify-content: center;
+}
+
+#saleInfo .infos .shopLink .goToShop {
+  padding: 16px 30px;
+  background-color: grey;
+  color: white;
+}
+
+/* frontImgs */
+#frontImgs {
+  display: flex;
+  padding: 50px 50px;
+}
+
+#frontImgs .img {
+  padding: 10px;
+}
+
+#frontImgs .img img {
+  width: 100%;
+}
