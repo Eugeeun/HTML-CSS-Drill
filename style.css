@@ -1,5 +1,25 @@
+:root {
+  /* font-size */
+  --font-size-large: 24px;
+  --font-size-medium: 20px;
+  --font-size-small: 16px;
+  --font-size-micro: 14px;
+
+  /* font-color */
+  --font-color-black: #1d1d1d;
+  --font-color-transparent-black: #00000052;
+  --font-color-grey: #6b6b6b;
+  --font-color-light-grey: #d6d5d5;
+  --font-color-white: #ffffff;
+  --font-color-yellow: #f5d042;
+
+  /* padding */
+  --padding-upDown: 20px;
+  --padding-side: 10px;
+}
+
 * {
-  border: 1px solid grey;
+  font-family: 'Oswald', sans-serif;
 }
 
 body {
@@ -25,34 +45,48 @@ h1 {
 }
 
 /* navBarAndTopInfo */
+#navBarAndTopInfo {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
 #navBarAndTopInfo .topInfo {
   display: flex;
   padding: 0 5%;
+  background-color: var(--font-color-light-grey);
 }
 
 #navBarAndTopInfo .topInfo .infos {
   display: flex;
   width: 80%;
+  font-size: var(--font-size-micro);
 }
 
 #navBarAndTopInfo .topInfo .infos li {
-  padding: 0 10px;
+  padding: 0 var(--padding-side);
 }
 
 #navBarAndTopInfo .topInfo .myBasket {
   position: absolute;
   right: 15px;
   top: 15px;
+  font-size: var(--font-size-micro);
 }
 
 #navBarAndTopInfo .navBar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-upDown) var(--padding-side);
 }
 
 #navBarAndTopInfo .navBar .logo {
   display: inline;
   width: 30%;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: var(--font-size-large);
 }
 
 #navBarAndTopInfo .navBar .logo h1 {
@@ -64,6 +98,9 @@ h1 {
   align-items: center;
   justify-content: flex-end;
   width: 70%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--font-size-micro);
 }
 
 #navBarAndTopInfo .navBar .navBarList li {
@@ -83,16 +120,27 @@ h1 {
 
 #saleInfo .infos {
   margin: 8%;
+  background-color: var(--font-color-transparent-black);
+  padding: 20px;
+  border-radius: 5px;
 }
 
 #saleInfo .infos span {
-  color: blue;
+  color: var(--font-color-yellow);
   font-size: 18px;
 }
 
 #saleInfo .infos h1 {
   font-size: 60px;
   text-transform: uppercase;
+  color: var(--font-color-white);
+  letter-spacing: 8px;
+  text-shadow: 10px 0 var(--font-color-black);
+}
+
+#saleInfo .infos p {
+  color: var(--font-color-white);
+  letter-spacing: 1px;
 }
 
 #saleInfo .infos .shopLink {
@@ -102,14 +150,19 @@ h1 {
 
 #saleInfo .infos .shopLink .goToShop {
   padding: 16px 30px;
-  background-color: grey;
-  color: white;
+  background-color: var(--font-color-transparent-black);
+  color: var(--font-color-white);
+  border: 2px solid var(--font-color-black);
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 /* frontImgs */
 #frontImgs {
   display: flex;
   padding: 50px 50px;
+  max-width: 1280px;
+  margin: auto;
 }
 
 #frontImgs .img {
@@ -118,4 +171,68 @@ h1 {
 
 #frontImgs .img img {
   width: 100%;
+}
+
+/* newarrivals */
+#newarrivals {
+  padding: 20px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#newarrivals .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#newarrivals .title h1 {
+  margin: 10px 0;
+}
+
+#newarrivals .title li .bar {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+  margin: auto;
+}
+
+#newarrivals .items {
+  display: flex;
+  text-align: center;
+}
+
+#newarrivals .items li {
+  max-width: 25%;
+  padding: 0 5px;
+  position: relative;
+  text-align: center;
+}
+
+#newarrivals .items img {
+  width: 100%;
+  height: auto;
+}
+
+#newarrivals .items h3 {
+  margin: 0 0 10px;
+}
+
+#newarrivals .items span {
+  display: block;
+  margin: 0 0 10px;
+}
+
+#newarrivals .items .addToCart {
+  text-transform: uppercase;
+}
+
+#newarrivals .items .sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }
