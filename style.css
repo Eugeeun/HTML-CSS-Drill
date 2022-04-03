@@ -7,11 +7,13 @@
 
   /* font-color */
   --font-color-black: #1d1d1d;
-  --font-color-transparent-black: #00000052;
+  --font-color-transparent-black: #00000033;
+  --font-color-transparent-grey: #2222221c;
   --font-color-grey: #6b6b6b;
   --font-color-light-grey: #d6d5d5;
   --font-color-white: #ffffff;
   --font-color-yellow: #f5d042;
+  --font-color-green: #02343f;
 
   /* padding */
   --padding-upDown: 20px;
@@ -53,7 +55,7 @@ h1 {
 #navBarAndTopInfo .topInfo {
   display: flex;
   padding: 0 5%;
-  background-color: var(--font-color-light-grey);
+  border-bottom: 1px solid var(--font-color-black);
 }
 
 #navBarAndTopInfo .topInfo .infos {
@@ -68,9 +70,23 @@ h1 {
 
 #navBarAndTopInfo .topInfo .myBasket {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: calc(var(--padding-side) * 1.5);
+  top: calc(var(--padding-side) * 1.5);
   font-size: var(--font-size-micro);
+}
+
+#navBarAndTopInfo .topInfo .myBasket .numOfProd {
+  position: absolute;
+  top: -13px;
+  left: 13px;
+  background-color: var(--font-color-green);
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 50%;
+  color: var(--font-color-white);
+  font-size: calc(var(--font-size-micro) * 0.8);
 }
 
 #navBarAndTopInfo .navBar {
@@ -106,6 +122,11 @@ h1 {
 #navBarAndTopInfo .navBar .navBarList li {
   padding: 0 3%;
   text-align: center;
+}
+
+#navBarAndTopInfo .navBar .navBarList li:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* saleInfo */
@@ -155,6 +176,11 @@ h1 {
   border: 2px solid var(--font-color-black);
   border-radius: 4px;
   text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+#saleInfo .infos .shopLink .goToShop:hover {
+  border: 2px solid var(--font-color-transparent-grey);
 }
 
 /* frontImgs */
@@ -167,6 +193,12 @@ h1 {
 
 #frontImgs .img {
   padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#frontImgs .img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.25);
 }
 
 #frontImgs .img img {
@@ -200,13 +232,15 @@ h1 {
 #newarrivals .items {
   display: flex;
   text-align: center;
+  justify-content: space-between;
 }
 
 #newarrivals .items li {
-  max-width: 25%;
-  padding: 0 5px;
+  max-width: 20%;
+  padding: 0px 5px;
   position: relative;
   text-align: center;
+  border: 1px solid var(--font-color-transparent-grey);
 }
 
 #newarrivals .items img {
@@ -223,16 +257,97 @@ h1 {
   margin: 0 0 10px;
 }
 
+#newarrivals .items a:hover h3,
+#newarrivals .items a:hover span {
+  text-decoration: underline;
+}
+
 #newarrivals .items .addToCart {
   text-transform: uppercase;
+  color: var(--font-color-green);
+  font-weight: 600;
+}
+
+#newarrivals .items .addToCart:hover {
+  color: var(--font-color-black);
+  text-decoration: underline;
 }
 
 #newarrivals .items .sale {
   position: absolute;
   top: 10px;
   left: 10px;
+  background-color: var(--font-color-green);
+  color: var(--font-color-white);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   line-height: 40px;
+}
+
+/* topCollection */
+#topCollection {
+  width: 100%;
+  height: 40vh;
+  background: no-repeat url(./imgs/iphone-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#topCollection .textAndBtn {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--font-color-white);
+  font-size: var(--font-size-large);
+}
+
+#topCollection .textAndBtn h5 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: calc(var(--padding-side) * 1.5) 0;
+  line-height: 100%;
+}
+
+#topCollection .textAndBtn h2 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: calc(var(--padding-side) * 1.5) 0 calc(var(--padding-upDown) * 1.5);
+  line-height: 100%;
+}
+
+#topCollection .textAndBtn a {
+  background-color: var(--font-color-transparent-black);
+  padding: var(--padding-side) calc(var(--padding-upDown) * 1.5);
+  font-size: var(--font-size-small);
+  color: var(--font-color-white);
+  font-weight: 300;
+  letter-spacing: 1px;
+  border: 1px solid var(--font-color-black);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+#topCollection .textAndBtn a:hover {
+  background-color: var(--font-color-black);
+}
+
+#topCollection .textAndBtn h5 footer .blank {
+  height: 1000px;
+}
+
+/* latestNews */
+#latestNews .blank {
+  height: 30vh;
+  background-color: var(--font-color-white);
+}
+
+/* footer */
+footer .blank {
+  height: 30vh;
+  background-color: var(--font-color-black);
 }
