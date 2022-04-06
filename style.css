@@ -135,7 +135,7 @@ h1 {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background: url(https://cdn.pixabay.com/photo/2016/11/29/06/16/apple-1867752_960_720.jpg);
+  background: url(./imgs/main-background.jpg);
   background-size: cover;
 }
 
@@ -181,6 +181,7 @@ h1 {
 
 #saleInfo .infos .shopLink .goToShop:hover {
   border: 2px solid var(--font-color-transparent-grey);
+  background-color: var(--font-color-black);
 }
 
 /* frontImgs */
@@ -342,12 +343,51 @@ h1 {
 
 /* latestNews */
 #latestNews .blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30vh;
   background-color: var(--font-color-white);
+  text-align: center;
+}
+#latestNews .blank .whiteSpace {
+  font-size: calc(var(--font-size-large) * 3);
 }
 
 /* footer */
+footer .features {
+  background-color: var(--font-color-transparent-grey);
+}
+
+footer .features .featureList {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 7vh 0;
+}
+
+footer .features .featureList h4 {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: 500;
+}
+
+footer .features .featureList span {
+  color: var(--font-color-grey);
+  font-weight: 300;
+  font-size: var(--font-size-micro);
+}
+
 footer .blank {
   height: 30vh;
   background-color: var(--font-color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .blank .blackSpace {
+  color: var(--font-color-white);
+  font-size: calc(var(--font-size-large) * 3);
 }
