@@ -72,6 +72,13 @@ button {
 
 #navBarAndTopInfo .topInfo .infos li {
   padding: 0 var(--padding-side);
+  font-size: var(--font-size-small);
+  line-height: 26px;
+}
+
+#navBarAndTopInfo .topInfo .infos .tel {
+  font-size: var(--font-size-medium);
+  width: 15%;
 }
 
 #navBarAndTopInfo .topInfo .myBasket {
@@ -480,6 +487,12 @@ footer .blank .blackSpace {
 }
 
 @media screen and (max-width: 420px) {
+  #navBarAndTopInfo .topInfo .infos li {
+    font-size: var(--font-size-micro);
+  }
+  #navBarAndTopInfo .topInfo .infos .tel {
+    font-size: var(--font-size-small);
+  }
   #frontImgs {
     flex-direction: column;
   }
