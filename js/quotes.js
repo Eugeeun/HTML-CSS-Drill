@@ -43,6 +43,7 @@ const quotes = [
 ];
 
 const quote = document.querySelector('.infos li p');
+// console.log(quote);
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 // 0~quotes의 길이만큼의 랜덤한 수를 반환 floor는 내림임
 
