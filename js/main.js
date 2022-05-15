@@ -22,24 +22,24 @@ toTopBtn.addEventListener('click', () => {
     home.scrollIntoView({ behavior: 'smooth' });
 });
 
-console.log(`frontImgsHeight! : ${frontImgsHeight}`);
+// console.log(`frontImgsHeight! : ${frontImgsHeight}`);
 document.addEventListener('scroll', () => {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if (window.scrollY > frontImgsHeight) toTopBtn.classList.add('visible');
   else toTopBtn.classList.remove('visible');
 });
 
 const frontImgs = document.querySelector('#frontImgs');
-console.log(frontImgs);
+// console.log(frontImgs);
 const frontImg = ['first', 'second', 'third'];
 let HTML = '';
 
 for (let img in frontImg) {
-  console.log(img);
-  console.log(frontImg[img]);
+  // console.log(img);
+  // console.log(frontImg[img]);
   HTML += `<div class="img">
         <img
-          src="../imgs/frontImgs/${frontImg[img]}.jpg"
+          src="./imgs/frontImgs/${frontImg[img]}.jpg"
           alt="${frontImg[img]}"
         />
       </div>
