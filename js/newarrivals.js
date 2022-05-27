@@ -10,8 +10,9 @@ function createElement(item) {
   a.setAttribute('href', '#');
 
   const img = document.createElement('img');
+  // img.setAttribute('src', item.image);
   img.src = item.image;
-  img.alt = item.name;
+  img.setAttribute('alt', item.name);
 
   const itemTitle = document.createElement('h3');
   itemTitle.innerText = item.name;
