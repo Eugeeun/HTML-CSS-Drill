@@ -4,25 +4,25 @@
       "name": "Ear Pearls",
       "startPrice": "£120.00",
       "currPrice": " £96.00",
-      "image": "imgs/newarrivals/earpearls.jpg"
+      "image": "../imgs/newarrivals/earpearls.jpg"
     },
     {
       "name": "LaserSound 7887",
       "startPrice": "£120.00",
       "currPrice": " £96.00",
-      "image": "imgs/newarrivals/lasersound.jpg"
+      "image": "../imgs/newarrivals/lasersound.jpg"
     },
     {
       "name": "Voicer Pro Red",
       "startPrice": "£120.00",
       "currPrice": " £96.00",
-      "image": "imgs/newarrivals/voicerprored.jpg"
+      "image": "../imgs/newarrivals/voicerprored.jpg"
     },
     {
       "name": "Watcher Sport",
       "startPrice": "£90.00",
       "currPrice": " £75.00",
-      "image": "imgs/newarrivals/watchersports.jpg"
+      "image": "../imgs/newarrivals/watchersports.jpg"
     }
   ]
 }

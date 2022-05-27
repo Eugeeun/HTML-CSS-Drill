@@ -1,5 +1,5 @@
 function loadItems() {
-  return fetch('data/data.json')
+  return fetch('../data/data.json')
     .then((response) => response.json())
     .then((json) => json.items);
 }
@@ -10,8 +10,8 @@ function createElement(item) {
   a.setAttribute('href', '#');
 
   const img = document.createElement('img');
-  img.setAttribute('src', item.image);
-  img.setAttribute('alt', item.name);
+  img.src = item.image;
+  img.alt = item.name;
 
   const itemTitle = document.createElement('h3');
   itemTitle.innerText = item.name;
