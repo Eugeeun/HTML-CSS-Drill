@@ -1,5 +1,5 @@
 function loadItems() {
-  return fetch('data/data.json')
+  return fetch('../data/data.json')
     .then((response) => response.json())
     .then((json) => json.items);
 }
@@ -39,7 +39,7 @@ function createElement(item) {
   li.appendChild(a);
   li.appendChild(sale);
   li.appendChild(link);
-  console.log(li);
+  // console.log(li);
 
   return li;
 }
